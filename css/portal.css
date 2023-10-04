@@ -1,90 +1,99 @@
-/* Brian IT261 style 1 */
-
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
-
-/* Base styles */
-body {
-    background-color: lightgray;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 0.95em;
-    line-height: 1.5em;
-}
-
 * {
     padding:0;
     margin:0;
     box-sizing: border-box;
 }
 
-::selection {
-    color: #000; 
-    background: #ff0;
+body {
+    background:rgb(241, 245, 228);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+    /* background:yellow; */
+    /* height: 200px; */
+   
 }
 
+.inner-header {
+  max-width:1200px;
+  margin:0px auto;
+  /* background: tan; */
+  overflow:hidden;
+}
+#logo {
+    width:150px;
+    float:left;
+}
+
+
+
+
 #wrapper {
-	max-width:1200px;
-	margin:20px auto;
-	clear:both;
-    background-color: white;
-    overflow: auto;
+    max-width:1200px;
+    margin:20px auto;
 }
 
 a {
-    color: darkcyan;
-    text-decoration: none;
+ color:lightseagreen;  
 }
 
-a:hover {
-    color: whitesmoke;
-    background-color: darkcyan;
-    text-decoration: none;
+nav {
+    height:60px;
+    background:lightseagreen;
+    line-height:60px;
+    margin-bottom:20px;
 }
 
-/* Typography */
-h1, h2, h3 {
-    font-weight: normal;
+nav li {
+    float:left;
+    width:16.66%;
+    text-align:center;
+    list-style-type:none;
 }
 
-h1 {
-    margin: auto;
-    background: white;
-    line-height: 2.5em;
+nav a {
+    color:white;
+    text-decoration:none;
 }
-
-h2, h3 {
-    margin-left: 1em;
-    line-height: 1em;
-}
-
-p {
-    margin: 1em 1em;
-}
-
-/* Other Elements */
 
 main {
     width:62%;
+    padding: 20px;
     float:left;
-	padding-left: 30px;
+    background:rgb(240, 241, 204);
+
 }
 
 aside {
     width:35%;
     float:right;
+    background:#fff;
     padding:2%;
 }
 
-#hero {
+aside ol {
+    margin-left:20px;
+    margin-bottom:10px;
+}
 
-margin-bottom:20px;
+aside li {
+    line-height:1.33;
+     color:lightseagreen;  
+}
 
+aside li a {
+  color:lightseagreen;  
+}
 
+.right {
+    float:left;
+    margin-right:30px;
 }
 
 footer {
-    clear: both;
-    /*text-align: center; */
-    padding-left: 30px;
+    clear:both;
+    height:50px;
+    line-height: 50px;
 }
 
 footer li {
@@ -94,119 +103,40 @@ footer li {
     
 }
 
-/* Global rules */
-.topnav {
-    margin: auto;
-    background-color: rgb(95,95,95);
-    overflow: auto;
+img {
+    max-width:100%;
 }
 
-.topnav a {
-    float: left;
-    display: block;
-    color: whitesmoke;
-    text-align: center;
-    padding: 12px 12px;
-    text-decoration: none;
-    text-transform: capitalize;
-    font-size: 16px;
+
+/* typorgraphy */
+
+h1 {
+    text-align:center;
+    font-size:3em;
+    margin:20px 0;
 }
 
-.topnav a:hover, .topnav .active {
-    background-color: darkcyan;
+
+h2 {
+    font-size:2em;
+    text-align:center;
+    margin-bottom:20px;
 }
 
-.topnav .icon {
-    display: none;
+h3 {
+    margin-bottom:10px;
+    font-size:1.5em;
 }
 
-/* Responsive rules */
-@media all and (max-width: 1199px) {
-    .topnav a:not(:first-child) {
-        display: none;
-    }
-    
-    .topnav a.icon {
-        float: right;
-        display: block;
-    }
-    
-    .topnav.responsive {
-        position: relative;
-    }
-    
-    .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-    
-    .topnav.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
+h1, h2, h3 {
+    font-family:playfair, 'Times New Roman', Times, serif;
+}
+main h2, aside h2 {
+    text-align:left;
 }
 
-@media all and (min-width:1200px) {
-    div.wrapper, .topnav {
-        width: 80%;
-        margin: auto;
-    }
-    
-    h1 {
-        width: 79%;
-        padding-left: 1%;
-    }
-    
-    img.desktop {
-        width: 50%;
-        float: left;
-        margin-right: 2em;
-    }
-    
-    img.tablet, img.phone {
-        display: none;
-    }
+p {
+    line-height:1.4;
+    margin-bottom:20px;
 }
 
-@media all and (min-width:501px) and (max-width:1199px) {
-    div.wrapper, .topnav {
-        width: 90%;
-        margin: auto;
-    }
-    
-    h1 {
-        width: 89%;
-        padding-left: 1%;
-    }
-    
-    img.tablet {
-        width: 50%;
-        float: right;
-        margin-left: 1em;
-    }
-    
-    img.desktop, img.phone {
-        display: none;
-    }
-}
-
-@media all and (max-width:500px) {
-    div.wrapper, .topnav {
-        width: 100%;
-    }
-    
-    h1 {
-        width: 99%;
-        padding-left: 1%;
-    }
-    
-    img.phone {
-        width: 100%;
-    }
-    
-    img.desktop, img.tablet {
-        display: none;
-    }
-}
