@@ -34,14 +34,15 @@
     $total = $product * $quantity;
     $total *= 1.097;
     echo $total;
-    echo '<h3>We would like our amount to reflect 3 decimal places -- we are thinking about number_format()</h3>';
+    echo '<h3>We would like our amount to reflect 2 decimal places -- we are thinking about floats and a new function - number_format()</h3>';
 
     $product = 120;
     $quantity = 5;
     $total = $product * $quantity;
-    $total *= 1.105;
+    $total *= 1.097;
     $total_friendly = number_format($total, 2);
-    echo 'We have a total of <b> $'.$total_friendly.'</b> dollrs';
+    echo 'We have a total of <b> $'.$total_friendly.'</b> dollars';
+    echo '<br>';
     echo '<br>';
 
 
@@ -49,7 +50,7 @@
     $quantity = 5;
     $total = $product * $quantity;
     $total *= 1.098;
-    echo 'We have a total of <b> $'.number_format($total, 2).'</b> dollrs';
+    echo 'We have a total of <b> $'.number_format($total, 2).'</b> dollars';
     echo '<h3>Our second preset function is our date function!</h3>';
     echo date('Y');
     echo '<br>';
