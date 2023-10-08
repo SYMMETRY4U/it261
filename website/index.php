@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="author" content="Brian"> 
     <title>Brian' Portal Page</title>
-	<link href="css/portal.css" rel="stylesheet" type="text/css">
+	<link href="../css/portal.css" rel="stylesheet" type="text/css">
 	
 </head>
 
@@ -16,19 +16,19 @@
  <div id="wrapper">
  <nav class="topnav" id="myTopnav">
 <ul>
-<li><a href="website/daily.php">Switch</a></li>
-<li><a href="default.htm">Troubleshoot</a></li>
-<li><a href="default.htm">Calculator</a></li>
-<li><a href="default.htm">Email</a></li>
-<li><a href="default.htm">Database</a></li>
-<li><a href="default.htm">Gallery</a></li>
+<li><a href="daily.php">Switch</a></li>
+<li><a href="../default.htm">Troubleshoot</a></li>
+<li><a href="../default.htm">Calculator</a></li>
+<li><a href="../default.htm">Email</a></li>
+<li><a href="../default.htm">Database</a></li>
+<li><a href="../default.htm">Gallery</a></li>
 						<!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a> -->
 </ul>
 
 </nav>
 <main>
 <h2>About Me</h2>
-<img class="right" src="images/BrianOnBike.jpg" alt="Brian">
+<img class="right" src="../images/BrianOnBike.jpg" alt="Brian">
 <p>My name is Brian St Louis, I am transitioning into a new career due to multiple work injuries
 that forced me to retire. During my working career I regularly attended work-related classes, seminars, and personal development classes at local community colleges. My goal is to do remote web development.
 </p>
@@ -41,10 +41,10 @@ that forced me to retire. During my working career I regularly attended work-rel
 
 <h3>MAMP Screenshots</h3>
 
-<img src="images/mampscreen.jpg" alt="mamp screenshot">
+<img src="../images/mampscreen.jpg" alt="mamp screenshot">
 <br>
 <br>
-<img src="images/mamperror.png" alt="mamp screenshot">
+<img src="../images/mamperror.png" alt="mamp screenshot">
 
 </main>
 	 
@@ -53,31 +53,31 @@ that forced me to retire. During my working career I regularly attended work-rel
 <h2>Weekly Class Exercises</h2>
 <h3>Week 2</h3>
 <ol>
-<li><a href="weeks/week2/var.php">var.php</a></li>
-<li><a href="weeks/week2/var2.php">var2.php</a></li>
-<li><a href="weeks/week2/currency-logic.php">currency-logic.php</a></li>
-<li><a href="weeks/week2/currency.php">currency.php</a></li>
-<li><a href="weeks/week2/heredoc.php">heredoc.php</a></li>
+<li><a href="../weeks/week2/var.php">var.php</a></li>
+<li><a href="../weeks/week2/vars2.php">vars2.php</a></li>
+<li><a href="../weeks/week2/currency-logic.php">currency-logic.php</a></li>
+<li><a href="../weeks/week2/currency.php">currency.php</a></li>
+<li><a href="../weeks/week2/heredoc.php">heredoc.php</a></li>
 </ol>
 
 <h3>Week 3</h3>
 <ol>
-<li><a href="weeks/week3/if.php">if.php</a></li>
-<li><a href="weeks/week3/date.php">date.php</a></li>
-<li><a href="weeks/week3/for-each.php">for-each.php</a></li>
-<li><a href="weeks/week3/for-loop.php">for-loop.php</a></li>
-<li><a href="weeks/week3/switch.php">switch.php</a></li>
-<li><a href="website/index.php">index.php</a></li>
+<li><a href="../weeks/week3/if.php">if.php</a></li>
+<li><a href="../weeks/week3/date.php">date.php</a></li>
+<li><a href="../weeks/week3/for-each.php">for-each.php</a></li>
+<li><a href="../weeks/week3/for-loop.php">for-loop.php</a></li>
+<li><a href="../weeks/week3/switch.php">switch.php</a></li>
+<li><a href="index.php">index.php</a></li>
 </ol>
 
 <h3>Week 4</h3>
 <ol>
-<li><a href="weeks/week4/form-get.php">form-get.php</a></li>
-<li><a href="weeks/week4/form1.php">form1.php</a></li>
-<li><a href="weeks/week4/form2.php">form2.php</a></li>
-<li><a href="weeks/week4/form3.php">form3.php</a></li>
-<li><a href="weeks/week4/arithmetic-form.php">arithmetic-form.php</a></li>
-<li><a href="weeks/week4/celcius.php">celcius.php</a></li>
+<li><a href="../weeks/week4/form-get.php">form-get.php</a></li>
+<li><a href="../weeks/week4/form1.php">form1.php</a></li>
+<li><a href="../weeks/week4/form2.php">form2.php</a></li>
+<li><a href="../weeks/week4/form3.php">form3.php</a></li>
+<li><a href="../weeks/week4/arithmetic-form.php">arithmetic-form.php</a></li>
+<li><a href="../weeks/week4/celcius.php">celcius.php</a></li>
 </ol>
 
 
@@ -89,7 +89,7 @@ that forced me to retire. During my working career I regularly attended work-rel
 	<ul>
 	<li>Copyright &copy;    2023</li>
 	<li>All Rights Reserved</li>
-	<li><a href="index.html">Web Design by Brian</a></li> <!-- temp link -->
+	<li><a href="../index.html">Web Design by Brian</a></li> <!-- temp link -->
 	<li><a href="#" target="_blank" id="html-checker">HTML Validation</a></li>
 	<li><a href="#" target="_blank" id="css-checker">CSS Validation</a></li>
 	</ul>
