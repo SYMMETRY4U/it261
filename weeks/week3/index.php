@@ -28,9 +28,9 @@ define('THIS_PAGE',basename($_SERVER['PHP_SELF']));
 echo '<ul>';
 foreach($nav as $key => $value) {
     if(THIS_PAGE == $key){
-        echo '<li><a style="color:red;" href="'.$key.' "> '.$value.'</a></li>';
+        echo '<li><a style="color:red;" href=" '.$key.' "> '.$value.'</a></li>';
     }else{
-        echo '<li><a style="color:green;" href="'.$key.' "> '.$value.'</a></li>';
+        echo '<li><a style="color:green;" href=" '.$key.' "> '.$value.'</a></li>';
     }
 
 }  // end foreach
