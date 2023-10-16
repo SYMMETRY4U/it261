@@ -1,4 +1,5 @@
-<footer> 
+
+<footer style="<?php echo $footerBackground; ?>">
 		<ul>
 	<li>Copyright &copy;    2023</li>
 	<li>All Rights Reserved</li>
