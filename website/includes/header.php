@@ -84,13 +84,13 @@ break;
 
 case 'Tuesday':
 $actDay = 'blue';
-$day = 'Motorcycle racer, family man, Musician';
+$day = 'Tuesday\'s spotlight Randy McAllister';
 $asideDay = 'Randy McAllister';
 $details = 'Randy and Diane McAllister owned Aurora Suzuki and after 50 years in business on September 30, 2014 they decided to retire. I remember him telling me he was also going to take a break from racing, but a short time later I was reading an article about him in a national motorcycle magazine competing in vintage motocross racing and being at the top of the expert class. I also have another friend whom I ride motorcycles with, who is also in the music industry who said he met Randy at a venue where Randy\'s band was playing some really good music.';
 $asideDetails = 'Randy McAllister racing at Wards Creek picture from from AHRMA MAG Vol. No. 3, Issue No. 8.';
 $picture = 'images/randywardscreek-sm.jpg';
 $altTag = 'Taco Tuesday';
-$background = 'background-color: #7EAA92;';
+$background = 'background-color: #FFD9E7;';
 $bodyBackground = 'background-color: #FFD9B7;';
 $asideBackground = 'background-color: #D0E7D2;';
 $footerBackground = 'background-color: #FFD9B7;';
@@ -99,7 +99,7 @@ break;
 
 case 'Wednesday':
 $actDay = 'orange';
-$day = 'Restored 1991 CR250';
+$day = 'Wednesdays are restoration spotlight days';
 $asideDay = 'Restored 1991 CR250';
 $details = 'I bought this bike in 1990 from Lake City Honda. Convinced my wife I would lose some weight if she would start letting me race again. I raced mostly outdoor motocross and arena cross. For four years in a row I competed in the Seattle Supercross at the Kingdome. I rode the veteran senior class with the other amateurs at the time. I had some pretty good success, winning a couple arena cross series and one Friday night motocross series however I really didn\'t lose any weight. I also got three compression fractures in my neck and back along with four ruptured discs which led to a couple back surgeries. But that hasn\'t stopped me from riding.';
 $asideDetails = 'After 17 years of this bike being in storage I completely restored it.';
@@ -130,8 +130,8 @@ break;
 
 case 'Friday':
 $actDay = 'yellow';
-$day = 'Time to get Ready for the weekend!';
-$asideDay = 'Time to Pick up the grandkids';
+$day = 'Fridays, get ready for the weekend!';
+$asideDay = 'Pick up the grandkids on Fridays';
 $details = 'This summer I was finally able to get my grandkids parents to agree to let me get them started on learning how to ride motorcycles. I got them their helmets, boots, and all the other riding gear they needed to ride safely. I took them to a local company called Dirtbiketraining LLC a great local company based out of Marysville Washington. <br><br>They have several nationally recognized riders and trainers that regularly provide training from beginner to those that compete professionally. <br><br>I hope to get them some bike soon.';
 $asideDetails = 'This picture is from Lake Coeur d\'Alene .';
 $picture = 'images/grandkids.jpg';
