@@ -1,7 +1,7 @@
 
-<div id="wrapper">
-<?php include('./includes/header.php'); ?>
 
+<?php include('./includes/header.php'); ?>
+<div id="wrapper">
 
 
 		<div><h1 style="text-align: center">Motorcycle's of the Day!</h1></div>
