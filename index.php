@@ -17,11 +17,11 @@
  <nav class="topnav" id="myTopnav">
 <ul>
 <li><a href="website/daily.php">Switch</a></li>
-<li><a href="default.htm">Troubleshoot</a></li>
-<li><a href="default.htm">Calculator</a></li>
-<li><a href="default.htm">Email</a></li>
-<li><a href="default.htm">Database</a></li>
-<li><a href="default.htm">Gallery</a></li>
+<li><a href="adder.php">Troubleshoot</a></li>
+<li><a href="index.php">Calculator</a></li>
+<li><a href="index.php">Email</a></li>
+<li><a href="index.php">Database</a></li>
+<li><a href="index.php">Gallery</a></li>
 						<!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a> -->
 </ul>
 
