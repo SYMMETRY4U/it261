@@ -1,0 +1,98 @@
+/* Not my normal css */
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  #wrapper {
+    max-width:1200px;
+    margin:20px auto;
+    clear:both;
+    overflow:hidden;
+    
+    }
+    
+
+
+  body {
+    background: rgb(230, 240, 205);
+  }
+  
+  h1, h2 {
+    text-align: center;
+  }
+  
+  form {
+    width: 500px;
+    margin: 30px auto;
+    background: rgb(242, 242, 236);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  fieldset {
+    padding: 8px;
+    border: 1px solid rgb(12, 47, 186);
+  }
+  
+  .box {
+    width: 500px;
+    margin: 10px auto;
+    padding: 8px;
+    border: 2px solid rgb(8, 133, 46);
+  }
+  
+  input {
+    margin-bottom: 10px;
+  }
+  
+  input [type=radio] {
+    margin-right: 5px;
+  }
+  
+  form ul {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    list-style: none;
+  }
+  
+  .error {
+    margin-bottom: 3px;
+    display: block;
+    color: darkred;
+    text-align: center;
+    font-size: 1.4em;
+    font-style: italic;
+  }
+  
+  select {
+    margin-bottom: 10px;
+    display: block;
+  
+  }
+
+  footer {
+	
+    height:60px;
+    line-height: 60px;
+    background:#ddd;
+    clear:both;
+    
+}
+
+footer ul {
+    display:flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+footer li {
+     justify-content: center;
+     margin:0 15px;
+}
