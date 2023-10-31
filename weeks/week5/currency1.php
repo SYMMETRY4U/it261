@@ -12,8 +12,8 @@
 <body>
 						
  <div id="wrapper">
- <div align="center"><h1>My Currency 1 php</h1></div>
-<form action="<?php echo $_SERVER['PHP_SELF'];?>"method="post">
+ <div><h1>My Currency 1 php</h1></div>
+<form action="<?php echo $_SERVER['PHP_SELF'];?> " method="post">
     <fieldset>
         <label>NAME</label>
         <input type="text" name="name">
@@ -77,6 +77,7 @@
 			document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
 			document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
 	</script>
+</footer>
 
 </div>
            

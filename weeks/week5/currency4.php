@@ -12,7 +12,7 @@
 <body>
 						<!-- https://www.geeksforgeeks.org/how-to-prevent-xss-with-html-php -->
  <div id="wrapper">
- <div align="center"><h1>My Currency 4 Extra Credit</h1></div>
+ <div><h1>My Currency 4 Extra Credit</h1></div>
 
  <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
     <fieldset>
