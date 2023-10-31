@@ -7,6 +7,7 @@
 	<meta name="author" content="Brian"> 
     <title>Curenncy 4 Extra Credit</title>
 	<link href="css/styles.css" rel="stylesheet" type="text/css">
+
 </head>
 
 <body>
@@ -99,9 +100,13 @@
                     <p>You now have <b>$' .number_format($dollars, 2) . ' American dollars</b> and we will be emailing you at <b>' . $email . '</b> with your information, as well as depositing your funds at <b>'.$bank.' bank!</b></p>
                     </div>
                     ';
+
+
+                    
                     
       // Adding the if - ifelse logic for videos and messages
-    if ($dollars < 249) {
+      if ($dollars < 249) {
+        $background_color = "#FFf";
         $message = "I am not happy, because I only have $".number_format($dollars, 2)." American dollars";
         $video_link = "https://www.youtube.com/embed/KtWGUCCXsAw?start=14&autoplay=1";
     } elseif ($dollars >= 250 && $dollars < 499) {
@@ -143,7 +148,9 @@
 } }
     }
 
-           ?>     
+           ?>  
+           
+           
 
 <footer> 
 	<ul>
@@ -160,6 +167,8 @@
 	</script>
 </footer>
 </div>     <!-- end wrapper  -->
+
+
 </body>
 
 </html>
