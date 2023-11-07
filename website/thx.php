@@ -1,19 +1,20 @@
+
 <?php 
 	include('config.php');
 	include('./includes/header.php'); ?>
 
 <div id="wrapper">
 
-		<h1>Welcome to our contact page</h1>
+		<h1>Thank You for your requests</h1>
+		<h2>A member from our team will get back to you with the requested information</h2>
+		<h2>We usually get back to you within 24 to 48 hours Monday thru Friday</h2>
 			<!-- <main style="<?php echo $background; ?>"> -->
             <!-- <main> -->
-				<div style="padding: 20px;">
+				<!-- <div style="padding: 20px;">
 
-                <?php
-                    include('./includes/form.php');
-                ?>
+
 							
-				</div>
+				</div> -->
 					<!-- </main> -->
 		
 	<!-- <aside>

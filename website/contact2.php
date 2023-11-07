@@ -1,5 +1,6 @@
+
 <?php 
-	include('config.php');
+	include('config2.php');
 	include('./includes/header.php'); ?>
 
 <div id="wrapper">
@@ -10,7 +11,7 @@
 				<div style="padding: 20px;">
 
                 <?php
-                    include('./includes/form.php');
+                    include('./includes/form2.php');
                 ?>
 							
 				</div>

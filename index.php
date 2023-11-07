@@ -90,6 +90,13 @@ that forced me to retire. During my working career I regularly attended work-rel
 <li><a href="weeks/week5/currency4.php">currency4.php</a></li>
 </ol>
 
+<h3>Week 6</h3>
+<ol>
+<li><a href="weeks/week6/form1.php">form1.php</a></li>
+<li><a href="weeks/week6/form2.php">form2.php</a></li>
+<li><a href="weeks/week6/functions.php">Functions</a></li>
+
+</ol>
 
 
 </aside>
