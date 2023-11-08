@@ -31,14 +31,13 @@
                 
                 <label>Fuel efficiency</label>
                 
-                <select name="efficiency">
-                    <option value="" <?php if(isset($_POST['efficiency']) && empty($_POST['efficiency'])) echo 'selected = "unselected"' ; ?>>Select one!</option>
-                    <option value="10">Terrible @ 10mpg</option>
-                    <option value="15">Average @ 15mpg</option>
-                    <option value="20">Good @ 20mpg</option>
-                    <option value="30">Really Good @ 30mpg</option>
-                    <option value="40">Great @ 40mpg</option>
-                </select>
+                <select name="efficiency"> <option value="" <?php if(isset($_POST['efficiency']) && $_POST['efficiency'] == NULL ) echo 'selected = "unselected"' ; ?>>Select one!</option>
+                <option value="10" <?php if(isset($_POST['efficiency']) && $_POST['efficiency'] == 10) echo 'selected = "selected"' ; ?>>Terrible @ 10mpg</option> 
+                <option value="15"<?php if(isset($_POST['efficiency']) && $_POST['efficiency'] == 15) echo 'selected = "selected"' ; ?>>Average @ 15mpg</option>
+                <option value="20"<?php if(isset($_POST['efficiency']) && $_POST['efficiency'] == 20) echo 'selected = "selected"' ; ?>>Good @ 20mpg</option> 
+                <option value="30"<?php if(isset($_POST['efficiency']) && $_POST['efficiency'] == 30) echo 'selected = "selected"' ; ?>>Really Good @ 30mpg</option> 
+                <option value="40"<?php if(isset($_POST['efficiency']) && $_POST['efficiency'] == 40) echo 'selected = "selected"' ; ?>>Great @ 40mpg</option> </select>
+
 
                 <input type="submit" value="Calculate">
                 <br>
