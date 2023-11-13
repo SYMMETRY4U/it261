@@ -240,16 +240,27 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
         }
     }
 
-    if (empty($_POST['phone'])) {
-        $phone_err = 'Please fill out your phone number';
-    } 
-    else { 
-        $phone = trim($_POST['phone']); 
-        $pattern = "/^(\d{3}-\d{3}-\d{4}|\d{3} \d{3} \d{4}|\d{10})$/";
-        if (!preg_match($pattern, $phone)) {
-            $phone_err = 'Invalid phone number format.';
-        }
-    }
+    // if (empty($_POST['phone'])) {
+    //     $phone_err = 'Please fill out your phone number';
+    // } 
+    // else { 
+    //     $phone = trim($_POST['phone']); 
+    //     $pattern = "/^(\d{3}-\d{3}-\d{4}|\d{3} \d{3} \d{4}|\d{10})$/";
+    //     if (!preg_match($pattern, $phone)) {
+    //         $phone_err = 'Invalid phone number format.';
+    //     }
+    // }   // this is the phone verification I liked better, more easy to put numbers in as most like to put numbers
+
+  
+    if(empty($_POST['phone'])) { 
+        $phone_err = 'Your phone number please!';
+    } elseif(array_key_exists('phone', $_POST)){
+        if(!preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone'])) {
+            $phone_err = 'Invalid format!';
+        } else {
+            $phone = $_POST['phone'];
+        }  //end else
+    }      // end main if
 
     if(empty($_POST['contact'])){
         $contact_err = 'Please select method of contact if any!';
@@ -281,16 +292,17 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 
     // Check all fields are filled
     if(!empty($firstName) &&
-        !empty($lastName) &&
-        !empty($email) &&
-        !empty($contact) &&
-        !empty($phone) &&
-        !empty($dirtbikes) &&
-        !empty($riding) &&
-        !empty($comments) &&
-        !empty($privacy)) {
+    !empty($lastName) &&
+    !empty($email) &&
+    !empty($contact) &&
+    !empty($phone) &&
+    !empty($dirtbikes) &&
+    !empty($riding) &&
+    !empty($comments) &&
+    !empty($privacy) &&
+    preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone'])) {
 
-        $to = 'admin@xyngular4u.com, brian@symmetry4u.com';
+    $to = 'admin@xyngular4u.com, brian@symmetry4u.com, oszemeo@mystudentswa.com';
         date_default_timezone_set('America/Los_Angeles');
         $subject = 'Test email on  '.date('m/d/y, h:i A');
         $body = '

@@ -26,7 +26,7 @@
         <span><?php echo $contact_err ;?></span>
 
         <label>Phone</label>
-        <input type="tel" name="phone" value="<?php if (isset($_POST['phone'])) echo htmlspecialchars($_POST['phone']); ?>">
+        <input type="tel" name="phone" placeholder="xxx-xxx-xxxx" value="<?php if (isset($_POST['phone'])) echo htmlspecialchars($_POST['phone']); ?>">
         <span><?php echo $phone_err ;?></span>        
 
         <label>What are your Favorite Dirt Bikes Brands</label><br>
