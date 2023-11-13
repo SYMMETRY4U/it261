@@ -5,7 +5,15 @@
 
 	<div id="wrapper">	
 	<div id="hero">
-	<img src="images/twelve.jpg" alt="twelve is greater than 3">
+	<div style="padding: 20px;">
+
+<?php
+	include('./includes/rand.php');
+?>
+			
+</div>
+
+	
 	
 	</div>
 			<!-- end hero -->	
