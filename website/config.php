@@ -57,18 +57,18 @@ $nav = array(
 );
 
 function make_links($nav){
-	$my_return = '';
-	foreach ($nav as $key => $value) {
-		if(THIS_PAGE == $key) {
-	$my_return .= '<li><a class="current" href="'.$key.'">'.$value.'</a></li>';
-	} else {
-	$my_return .= '<li><a href="' .$key.'">'.$value.'</a></l1>';
-	}
-
-} //end foreach
-return $my_return;
-
-} // end function
+    $my_return = '';
+    foreach ($nav as $key => $value) {
+        if(THIS_PAGE == $key) {
+            $my_return .= '<li><a class="current" href="'.$key.'">'.$value.'</a></li>';
+        } else {
+            $my_return .= '<li><a href="'.$key.'">'.$value.'</a></li>'; // Corrected </li> here
+        }
+    }
+    //end foreach
+    return $my_return;
+}
+ // end function
 
 // this is the beginning of the switch for homework 3!!!!
 if(isset($_GET[ 'today']) ) {
@@ -207,7 +207,6 @@ $comments_err ='';
 $privacy  ='';
 $privacy_err ='';
 
-
 if($_SERVER['REQUEST_METHOD'] == "POST"){
 
     if(empty($_POST['dirtbikes'])){
@@ -216,9 +215,6 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
     else{ 
         $dirtbikes = $_POST['dirtbikes'];
     }
-}
-
-if($_SERVER['REQUEST_METHOD'] == "POST"){
 
     if(empty($_POST['firstName'])){
         $firstName_err = 'Please fill out your first name';
@@ -226,8 +222,6 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
     else{ 
         $firstName = $_POST['firstName'];
     }
-}
-if($_SERVER['REQUEST_METHOD'] == "POST"){
 
     if(empty($_POST['lastName'])){
         $lastName_err = 'Please fill out your last name';
@@ -235,38 +229,27 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
     else{ 
         $lastName = $_POST['lastName'];
     }
-}
-if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
     if (empty($_POST['email'])) {
         $email_err = 'Please fill in your email';
     } 
     else { 
         $email = $_POST['email'];
-        if (strpos($email, '@') === false) {
-            $email_err = 'Email address is missing an "@" symbol.';
-        }
-        elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
             $email_err = 'Invalid email format.';
         }
     }
-}
 
-if ($_SERVER['REQUEST_METHOD'] == "POST") {
     if (empty($_POST['phone'])) {
         $phone_err = 'Please fill out your phone number';
     } 
     else { 
         $phone = trim($_POST['phone']); 
         $pattern = "/^(\d{3}-\d{3}-\d{4}|\d{3} \d{3} \d{4}|\d{10})$/";
-
         if (!preg_match($pattern, $phone)) {
-            $phone_err = 'Invalid phone number format. Use numbers.';
+            $phone_err = 'Invalid phone number format.';
         }
     }
-}
-
-if($_SERVER['REQUEST_METHOD'] == "POST"){
 
     if(empty($_POST['contact'])){
         $contact_err = 'Please select method of contact if any!';
@@ -274,10 +257,6 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
     else{ 
         $contact = $_POST['contact'];
     }
-}
-
-
-if($_SERVER['REQUEST_METHOD'] == "POST"){
 
     if(empty($_POST['riding'])){
         $riding_err = 'Choose your riding preference';
@@ -285,9 +264,6 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
     else{ 
         $riding = $_POST['riding'];
     }
-}
-
-if($_SERVER['REQUEST_METHOD'] == "POST"){
 
     if(empty($_POST['comments'])){
         $comments_err = 'We value your input';
@@ -295,8 +271,6 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
     else{ 
         $comments = $_POST['comments'];
     }
-}
-if($_SERVER['REQUEST_METHOD'] == "POST"){
 
     if(empty($_POST['privacy'])){
         $privacy_err = 'You must agree to our privacy statement';
@@ -304,63 +278,41 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
     else{ 
         $privacy = $_POST['privacy'];
     }
-}
 
-function my_dirtbikes ($dirtbikes) {
-    $my_return= '';
-    if(!empty($_POST['dirtbikes'] ) ) {
-        $my_return = implode(',  ', $_POST['dirtbikes']);
-    }
-    return $my_return;
-}
-if(isset($_POST['firstName'],
-        $_POST['lastName'],
-        $_POST['email'],
-        $_POST['contact'],
-        $_POST['phone'],
-        $_POST['dirtbikes'],
-        $_POST['riding'],
-        $_POST['comments'],
-        $_POST['privacy'] )){
+    // Check all fields are filled
+    if(!empty($firstName) &&
+        !empty($lastName) &&
+        !empty($email) &&
+        !empty($contact) &&
+        !empty($phone) &&
+        !empty($dirtbikes) &&
+        !empty($riding) &&
+        !empty($comments) &&
+        !empty($privacy)) {
 
-            $to = 'admin@xyngular4u.com';
-            date_default_timezone_set('America/Los_Angeles');
-            $subject = 'Test email on  '.date('m/d/y, h:i A');
-            $body = '
+        $to = 'admin@xyngular4u.com, brian@symmetry4u.com';
+        date_default_timezone_set('America/Los_Angeles');
+        $subject = 'Test email on  '.date('m/d/y, h:i A');
+        $body = '
             First Name: '.$firstName.'  '.PHP_EOL.' 
             Last Name: '.$lastName.'  '.PHP_EOL.' 
             Email: '.$email.'  '.PHP_EOL.' 
-            contact: '.$contact.'  '.PHP_EOL.' 
+            Contact: '.$contact.'  '.PHP_EOL.' 
             Phone: '.$phone.'  '.PHP_EOL.' 
-            dirtbikes: '.my_dirtbikes($dirtbikes).'  '.PHP_EOL.' 
-            riding: '.$riding.'  '.PHP_EOL.'
+            Dirtbikes: '.my_dirtbikes($dirtbikes).'  '.PHP_EOL.' 
+            Riding: '.$riding.'  '.PHP_EOL.'
             Comments: '.$comments.'  '.PHP_EOL.' 
             ';
-            ob_end_flush();   
-        $headers = array(
-            'From' => 'noreply@xyngular4u.com'
-            );
+            
+        $headers = 'From: noreply@xyngular4u.com';
 
-            if(!empty(
-                $firstName &&
-                $lastName &&
-                $email &&
-                $contact &&
-                $phone &&
-                $dirtbikes &&
-                $riding &&
-                $comments )) {
-
-                   mail($to, $subject, $body, $headers);
-                   header('Location:thx.php');
-                   exit;
-                }
-
+        if(mail($to, $subject, $body, $headers)){
+            header('Location:thx.php');
+            exit;
         }
+    }
+}
 
-         
-        
-        
-        
-
-
+function my_dirtbikes($dirtbikes) {
+    return !empty($dirtbikes) ? implode(', ', $dirtbikes) : '';
+}
