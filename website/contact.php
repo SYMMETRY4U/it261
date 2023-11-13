@@ -15,12 +15,10 @@
 							
 				</div>
 					<!-- </main> -->
-		
-	<!-- <aside>
+		<!-- <aside>
     <h3>This is my aside</h3>
     
-    
-		</aside> -->
+    		</aside> -->
 
 	</div>  <!-- end of wrapper -->
 
