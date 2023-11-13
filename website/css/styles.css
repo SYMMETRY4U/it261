@@ -50,17 +50,19 @@ header {
     
     main {
     width:62%;
-    min-height: 500px;
+    min-height: 400px;
     background:lightblue;
     float:left;
+    padding: 20px;
     
     }
     
     aside {
     width:35%;
-    /* height: 400px; */
-    background:lightsalmon;
+    min-height: 400px;
+    background:rgb(236, 155, 123);
     float:right;
+    padding: 20px;
     
     }
     

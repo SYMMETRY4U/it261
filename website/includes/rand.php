@@ -14,7 +14,7 @@ echo '<h1>Random Pictures that will be changed Soon!</h1>';
     $my_return = '';
     $i = rand(0, 4);
     $selected_image = ''.$photos [$i].'.jpg';
-    $my_return =  '<img src="./images/'.$selected_image.'" alt"'.$photos [$i].'">';
+    $my_return = '<img src="./images/'.$selected_image.'" alt="'.$photos[$i].'">';
     return $my_return;
     }  // end function
 

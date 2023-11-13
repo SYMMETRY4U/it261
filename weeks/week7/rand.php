@@ -51,15 +51,17 @@ echo '<img src="./images/'.$selected_image.'" alt"'.$photos [$i].'">';
 
 echo '<h2>Lets create a function</h2>';
 
-    function random_images($photos) {
+function random_images($photos) {
     $my_return = '';
     $i = rand(0, 4);
     $selected_image = ''.$photos [$i].'.jpg';
-    $my_return =  '<img src="./images/'.$selected_image.'" alt"'.$photos [$i].'">';
+    $my_return = '<img src="./images/'.$selected_image.'" alt="'.$photos[$i].'">';
     return $my_return;
     }  // end function
 
     echo random_images($photos);
+
+    
 
 
 
