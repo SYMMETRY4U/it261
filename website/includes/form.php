@@ -1,6 +1,6 @@
 
 
-<div><h2>We will Get back to you witn 24 hours</h2></div>
+<div><h2>We will Get back to you within 24 hours</h2></div>
 
         <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
             <fieldset>
@@ -29,7 +29,7 @@
         <input type="tel" name="phone" value="<?php if (isset($_POST['phone'])) echo htmlspecialchars($_POST['phone']); ?>">
         <span><?php echo $phone_err ;?></span>        
 
-        <label>What is your Favorite Dirt Bikes Brands</label><br>
+        <label>What are your Favorite Dirt Bikes Brands</label><br>
             <ul>
                 <li><input type="checkbox" name="dirtbikes[]" value="Yamaha" <?php if(isset($_POST['dirtbikes']) && in_array('Yamaha', $_POST['dirtbikes'])) echo 'checked="checked"'; ?>> Yamaha</li>
                 <li><input type="checkbox" name="dirtbikes[]" value="Honda" <?php if(isset($_POST['dirtbikes']) && in_array('Honda', $_POST['dirtbikes'])) echo 'checked="checked"'; ?>> Honda</li>
@@ -37,7 +37,7 @@
                 <li><input type="checkbox" name="dirtbikes[]" value="KTM" <?php if(isset($_POST['dirtbikes']) && in_array('KTM', $_POST['dirtbikes'])) echo 'checked="checked"'; ?>> KTM</li>
                 <li><input type="checkbox" name="dirtbikes[]" value="Husky" <?php if(isset($_POST['dirtbikes']) && in_array('Husky', $_POST['dirtbikes'])) echo 'checked="checked"'; ?>> Husky</li>
             </ul>
-</ul>
+
        <span><?php echo $dirtbikes_err ;?></span>
 
     <label>Type of riding you are interested in?</label>
@@ -58,13 +58,13 @@
     <label>Privacy</label>
     <ul>
     <li><input type="radio" name="privacy" value="yes" <?php if ( isset ($_POST['privacy']) && $_POST ['privacy'] == "yes" ) echo 'checked = "checked"' ;?>> Yes</li>
-    <span><?php echo $privacy_err ;?></span>
+    
         </ul>
+      <span><?php echo $privacy_err ;?></span>  
     <br>
         <input type="submit" value="Submit">
+        <br>
         <br>
         <p><a href="">Reset it</a></p>
         </fieldset>
         </form>
-
-</form>
