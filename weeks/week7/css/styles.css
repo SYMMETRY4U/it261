@@ -1,0 +1,89 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    max-width:1200px;
+    margin:20px auto;
+    clear:both;
+    overflow:hidden;
+    
+    }
+
+body {
+    background:beige;
+}
+
+form {
+
+    width:500px;
+    margin:30px auto;
+}
+
+fieldset {
+    padding:10px;
+}
+
+label {
+    display:block;
+    margin-bottom:5px;
+    font-weight: bold;
+}
+
+input[type=text],
+input[type=email], 
+input[type=tel]{
+    width:100%;
+    margin-bottom:10px;
+}
+
+span  {
+    display:block;
+    color:red;
+    font-style: italic;
+    margin-bottom:10px;
+}
+
+select {
+    margin-bottom:10px;
+}
+
+textarea {
+    width:100%;
+    resize: none;
+    height:80px;
+    margin-bottom:10px;
+    padding-left: 5px;
+}
+
+form ul {
+list-style-type: none;
+margin-bottom:10px;
+margin-left:5px;
+}
+
+h1 {
+    text-align:center;
+    margin-top:20px;
+}
+
+table {
+        border: 3px solid green;
+        border-collapse: collapse;
+        
+}
+
+td {
+    border: 1px solid blue;
+    text-align: center;
+    margin: 30px;
+    width: 33%;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+

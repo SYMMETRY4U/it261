@@ -1,4 +1,5 @@
 <?php
+ob_start();
 
 $wines ='';
 $wines_err ='';
@@ -21,86 +22,72 @@ $privacy_err ='';
 
 if($_SERVER['REQUEST_METHOD'] == "POST"){
 
-        if(empty($_POST['wines'])){
-            $wines_err = 'What... no wines?';
-        }
-        else{ 
-            $wines = $_POST['wines'];
-        }
-}
-if($_SERVER['REQUEST_METHOD'] == "POST"){
+    if(empty($_POST['wines'])){
+        $wines_err = 'What... no wines?';
+    } else { 
+        $wines = $_POST['wines'];
+    }
 
     if(empty($_POST['firstName'])){
         $firstName_err = 'Please fill out your first name';
-    }
-    else{ 
+    } else { 
         $firstName = $_POST['firstName'];
     }
-}
-if($_SERVER['REQUEST_METHOD'] == "POST"){
 
     if(empty($_POST['lastName'])){
         $lastName_err = 'Please fill out your last name';
-    }
-    else{ 
+    } else { 
         $lastName = $_POST['lastName'];
     }
-}
-if($_SERVER['REQUEST_METHOD'] == "POST"){
 
-    if(empty($_POST['email'])){
+      if(empty($_POST['email'])){
         $email_err = 'Please fill in your email';
-    }
-    else{ 
+    } else { 
         $email = $_POST['email'];
     }
-}
-if($_SERVER['REQUEST_METHOD'] == "POST"){
 
-    if(empty($_POST['phone'])){
-        $phone_err = 'Please fill out your phone number';
-    }
-    else{ 
-        $phone = $_POST['phone'];
-    }
-}
-if($_SERVER['REQUEST_METHOD'] == "POST"){
+        //     if(empty($_POST['phone'])){
+        //         $phone_err = 'Please fill out your phone number';
+        //     }
+        //     else{ 
+        //         $phone = $_POST['phone'];
+        //     }
+        // }
+
+     if(empty($_POST['phone'])) { 
+        $phone_err = 'Your phone number please!';
+    } elseif(array_key_exists('phone', $_POST)){
+        if(!preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone'])) {
+            $phone_err = 'Invalid format!';
+        } else {
+            $phone = $_POST['phone'];
+        }  //end else
+    }      // end main if
 
     if(empty($_POST['gender'])){
         $gender_err = 'Please check your gender';
-    }
-    else{ 
+    } else { 
         $gender = $_POST['gender'];
     }
-}
-if($_SERVER['REQUEST_METHOD'] == "POST"){
 
     if(empty($_POST['regions'])){
         $regions_err = 'Please choose your region';
-    }
-    else{ 
+    } else { 
         $regions = $_POST['regions'];
     }
-}
-if($_SERVER['REQUEST_METHOD'] == "POST"){
 
     if(empty($_POST['comments'])){
         $comments_err = 'We value your input';
-    }
-    else{ 
+    } else { 
         $comments = $_POST['comments'];
     }
-}
-if($_SERVER['REQUEST_METHOD'] == "POST"){
 
     if(empty($_POST['privacy'])){
         $privacy_err = 'You must agree to receive spam email!';
-    }
-    else{ 
+    } else { 
         $privacy = $_POST['privacy'];
     }
 }
-
 function my_wines ($wines) {
     $my_return= '';
     if(!empty($_POST['wines'] ) ) {
@@ -108,6 +95,7 @@ function my_wines ($wines) {
     }
     return $my_return;
 }  //end my wines function
+
 
 if(isset($_POST['firstName'],
         $_POST['lastName'],
@@ -144,7 +132,8 @@ if(isset($_POST['firstName'],
                 $phone &&
                 $wines &&
                 $regions &&
-                $comments )) {
+                                $comments )&&
+                preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone'])) {
 
                    mail($to, $subject, $body, $headers);
                    header ('Location:thx.php');
@@ -160,12 +149,12 @@ if(isset($_POST['firstName'],
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Our second form week 6</title>
+    <title>Form 3 week 7 - Phone Validation</title>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <div id="wrapper">
-        <div><h1>Form 2 in Week 6</h1></div>
+        <div><h1>Form 3 in Week 7</h1></div>
         <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
             <fieldset>
             <legend>Contact Brian</legend>
@@ -190,7 +179,7 @@ if(isset($_POST['firstName'],
         <span><?php echo $gender_err ;?></span>
 
         <label>Phone</label>
-        <input type="tel" name="phone" value="<?php if (isset($_POST['phone'])) echo htmlspecialchars($_POST['phone']); ?>">
+        <input type="tel" name="phone" placeholder="xxx-xxx-xxxx" value="<?php if (isset($_POST['phone'])) echo htmlspecialchars($_POST['phone']); ?>">
         <span><?php echo $phone_err ;?></span>        
 
         <label>Favorite Wines</label><br>

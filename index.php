@@ -98,6 +98,15 @@ that forced me to retire. During my working career I regularly attended work-rel
 
 </ol>
 
+<h3>Week 7</h3>
+<ol>
+<li><a href="weeks/week7/form3.php">Form3.php</a></li>
+<li><a href="weeks/week7/strings.php">Strings.php</a></li>
+<li><a href="weeks/week7/pictures.php">Pictures.php</a></li>
+<li><a href="weeks/week7/rand.php">Random Function</a></li>
+
+</ol>
+
 
 </aside>
 
