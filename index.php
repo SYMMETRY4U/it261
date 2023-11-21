@@ -19,9 +19,9 @@
 <li><a href="website/daily.php">Switch</a></li>
 <li><a href="adder.php">Troubleshoot</a></li>
 <li><a href="weeks/week5/calculator.php">Calculator</a></li>
-<li><a href="index.php">Email</a></li>
+<li><a href="website/contact.php">Email</a></li>
 <li><a href="index.php">Database</a></li>
-<li><a href="index.php">Gallery</a></li>
+<li><a href="website/gallery.php">Gallery</a></li>
 						<!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a> -->
 </ul>
 
@@ -110,7 +110,7 @@ that forced me to retire. During my working career I regularly attended work-rel
 <h3>Week 8</h3>
 <ol>
 <li><a href="weeks/week8/people.php">People.php</a></li>
-<li><a href="weeks/week8/adminer.php">Adminer</a></li>
+<!-- <li><a href="weeks/week8/adminer.php">Adminer</a></li> -->
 
 
 </ol>

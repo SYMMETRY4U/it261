@@ -3,7 +3,7 @@
 		<ul>
 	<li>Copyright &copy;    2023</li>
 	<li>All Rights Reserved</li>
-	<li><a href="../index.php">Web Design by Brian</a></li> <!-- temp link -->
+	<li><a href="https://xyngmetry.com/it261/index.php">Web Design by Brian</a></li> <!-- temp link -->
 	<li><a id="html-checker" href="#">HTML Validation</a></li>
 	<li><a id="css-checker" href="#">CSS Validation</a></li>
 	</ul>
