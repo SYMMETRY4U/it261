@@ -205,6 +205,25 @@ main h3 {
   text-align: center;
 }
 
+table {
+    border: 3px solid green;
+    border-collapse: collapse;
+    
+}
+
+td {
+border: 1px solid blue;
+text-align: center;
+margin: 30px;
+width: 33%;
+}
+
+table {
+margin-left: auto;
+margin-right: auto;
+}
+
+
 /*h1 {
     text-align:center;
     margin-top:20px;
