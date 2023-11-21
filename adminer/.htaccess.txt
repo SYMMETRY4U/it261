@@ -1,0 +1,8 @@
+<FilesMatch "\.(sql|js|css|jpe?g|png|gif|svg)$">
+  Order deny,allow
+  Deny from all
+</FilesMatch>
+
+<Files index.php>
+  Allow from all
+</Files>

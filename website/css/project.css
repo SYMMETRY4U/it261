@@ -1,0 +1,94 @@
+/* styles for week 8 php files */
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(216, 236, 216);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+}
+
+#wrapper {
+    max-width: 1200px;
+    margin:30px auto;
+    overflow: hidden;
+}
+
+h1, h2, h3 {
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom:10px;
+}
+
+main {
+    float:left;
+    width:63%;
+    margin-bottom:30px;
+}
+
+aside {
+    float:right;
+    width:34%;
+    margin-bottom:30px;
+    
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    margin-bottom:20px;
+    line-height: 1.35;
+}
+.blurb {
+    font-style:italic;
+    font-size:.9em;
+}
+
+.center {
+    display:block;
+    margin:0 auto 20px auto;
+}
+
+hr {
+    display:block;
+    margin-bottom:20px;
+}
+
+main ul {
+    margin-bottom:10px;
+    list-style-type:none;
+}
+
+/* Typography */
+
+
+footer {
+    clear:both;
+    height:60px;
+    border-top: 1px dotted green;
+    line-height: 60px;
+    font-size: .9em;
+}    
+
+footer ul {
+    display:flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+
+
+footer li {
+    justify-content: center;
+    margin:0 15px;
+}
+
+
+
+
+

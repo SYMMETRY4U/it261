@@ -24,6 +24,11 @@ switch(THIS_PAGE) {
 	$title = 'Project page of our Website Project';
 	$body = 'project inner';
 	break;
+
+    case 'project-view.php':
+        $title = 'Project View page of our Website Project';
+        $body = 'project inner';
+        break;
 	
 	case 'contact.php':
 	$title = 'Contact page of our Website Project';
@@ -116,7 +121,7 @@ $details = 'Randy and Diane McAllister owned Aurora Suzuki and after 50 years in
 $asideDetails = 'Randy McAllister racing at Wards Creek picture from from AHRMA MAG Vol. No. 3, Issue No. 8.';
 $picture = 'images/randywardscreek-sm.jpg';
 $altTag = 'Randy McAllister';
-$background = 'background-color: #FFD9E7;';
+// $background = 'background-color: #FFD9E7;';
 $bodyBackground = 'background-color: #FFD9B7;';
 $asideBackground = 'background-color: #D0E7D2;';
 $footerBackground = 'background-color: #FFD9B7;';
@@ -302,7 +307,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
     !empty($privacy) &&
     preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone'])) {
 
-    $to = 'admin@xyngular4u.com, brian@symmetry4u.com, oszemeo@mystudentswa.com';
+    $to = 'admin@xyngular4u.com, brian@symmetry4u.com, szemeo@mystudentswa.com';
         date_default_timezone_set('America/Los_Angeles');
         $subject = 'Test email on  '.date('m/d/y, h:i A');
         $body = '
@@ -327,4 +332,22 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 
 function my_dirtbikes($dirtbikes) {
     return !empty($dirtbikes) ? implode(', ', $dirtbikes) : '';
+}
+
+include('credentials.php');
+
+
+function myError($myFile, $myLine, $errorMsg)
+{
+if(defined('DEBUG') && DEBUG)
+{
+ echo 'Error in file: <b> '.$myFile.' </b> on line: <b> '.$myLine.' </b>';
+      echo 'Error message: <b> '.$errorMsg.'</b>';
+      die();
+  }  else {
+      echo ' Houston, we have a problem!';
+      die();
+  }
+    
+    
 }

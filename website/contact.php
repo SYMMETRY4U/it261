@@ -5,7 +5,7 @@
 <div id="wrapper">
 
 		<h1>Welcome to our contact page</h1>
-			<!-- <main style="<?php echo $background; ?>"> -->
+		
             <!-- <main> -->
 				<div style="padding: 20px;">
 

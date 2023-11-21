@@ -107,6 +107,14 @@ that forced me to retire. During my working career I regularly attended work-rel
 
 </ol>
 
+<h3>Week 8</h3>
+<ol>
+<li><a href="weeks/week8/people.php">People.php</a></li>
+<li><a href="weeks/week8/adminer.php">Adminer</a></li>
+
+
+</ol>
+
 
 </aside>
 
