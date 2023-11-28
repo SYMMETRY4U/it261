@@ -28,17 +28,16 @@ if(mysqli_num_rows($result) > 0){
 while($row = mysqli_fetch_assoc($result)) {
  
     echo '
-    <h2>Information about: '.$row['brand'].' '.$row['model'].'</h2>
+    <h2 style="text-align: left">Information about: '.$row['brand'].' '.$row['model'].'</h2>
     <ul>
 
-    
     <li>Year: '.$row['year'].'</li>
     <li>Purpose: '.$row['purpose'].'</li>
     </ul>
 
-    <p>For more information about the'.$row['model'].'. click <a href="project-view.php?id='.$row['project_id'].' "> here</a></p>
+    <p>For more information about the '.$row['model'].'. click <a href="project-view.php?id='.$row['project_id'].' "> here</a></p><br><br>
     ';
-
+    
     
 
 }   // end while loop

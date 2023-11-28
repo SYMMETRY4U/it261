@@ -6,7 +6,6 @@
 	<li><a id="html-checker" href="#">HTML Validation</a></li>
 	<li><a id="css-checker" href="#">CSS Validation</a></li>
 	</ul>
-    <br>
 
 	<script>
 			document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
@@ -25,3 +24,8 @@
 		</script>
 		
 	</footer>
+	
+	
+    
+</body>
+</html>

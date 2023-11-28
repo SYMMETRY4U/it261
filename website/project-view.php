@@ -66,7 +66,7 @@ include('./includes/header.php');
     </main>
 
     <aside>
-    <h3>Images of my Motorcycles</h3>
+    <h3>Images of Motorcycles</h3>
     <figure>
         <img src="./images/project<?php echo $id;?>.jpg" alt="<?php echo $brand; ?>">
         <figcaption>

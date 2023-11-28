@@ -51,11 +51,11 @@ include('./includes/header.php');
     <?php
     echo '
     <ul>
-        <li><b>First Name:</b>'.$first_name.'</li>
-        <li><b>Last Name:</b>'.$last_name.'</li>
-        <li><b>Email:</b>'.$email.'</li>
-        <li><b>Birth Date:</b>'.$birthdate.'</li>
-        <li><b>Occupation:</b>'.$occupation.'</li>     
+        <li><b>First Name: </b>'.$first_name.'</li>
+        <li><b>Last Name: </b>'.$last_name.'</li>
+        <li><b>Email: </b>'.$email.'</li>
+        <li><b>Birth Date: </b>'.$birthdate.'</li>
+        <li><b>Occupation: </b>'.$occupation.'</li>     
     ';
     ?>
     </ul>
@@ -66,10 +66,12 @@ include('./includes/header.php');
     </main>
 
     <aside>
-    <h3>Aside Information that will display our person's image</h3>
+    <h3>Here is their image!!</h3>
     <figure>
         <img src="./images/people<?php echo $id;?>.jpg" alt="<?php echo $first_name; ?>">
+        
         <figcaption>
+            <br>
             <?php echo $blurb;?>
         </figcaption>
     </figure>
