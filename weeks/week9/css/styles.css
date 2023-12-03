@@ -6,20 +6,36 @@
 }
 body {
     background:#ceecd7;
+    
 }
 header {
-    background:tan;
-    height:200px;
+    background:#ced9bd;
+    overflow:hidden;
+    margin-bottom:20px;
 }
 .success {
     float:left;
-    padding:20px;
-    border:2px solid rgb(6, 6, 6);
+    width: 200px;
+    margin-top: 20px; 
+    margin-left: 20px;
+    margin-top: 20px;
+    padding:10px;
+    /* border:1px solid #13d042; */
+}
+
+.sucesss h1, h2, h3{
+    font-style: normal;
+    font-size: 1.2em;
 }
 .welcome-logout {
     float:right;
-    padding:20px;
-    border:2px solid rgb(6, 6, 6);
+    width: 200px;
+    margin-top: 20px; 
+    margin-left: 20px;
+    margin-top: 20px;
+    padding:10px;
+    text-align: center;
+    /* border:1px solid #13d042; */
 }
 footer {
     width:100%;
@@ -42,7 +58,10 @@ footer ul {
     list-style-type: none;
 }
 
-
+.center {
+    text-align: center;
+    margin-bottom: 10px;
+}
 
 footer li {
     justify-content: center;
@@ -52,8 +71,9 @@ footer li {
 
 #wrapper {
     clear:both;
-    width:940px;
-    margin:0 auto;
+    width:1000px;
+    margin:25px auto;
+    height: auto;
 }
 img {
     display:block;
@@ -75,8 +95,12 @@ label {
 }
 input {
     display:block;
-    width:100%;
-    margin-bottom:15px;
+    margin: auto;
+    line-height: 1.2em;
+    font-size: 1.1em;
+    width:98%;
+    padding-left: 5px;
+    margin-bottom:10px;
     background: #fff;
 }
 fieldset {
@@ -96,15 +120,28 @@ h1 {
 h3 {
     text-align: center;
     margin:10px 0;
-    font-style: italic;
+    /* font-style: italic; */
 }
 .block {
     display:block;
     text-align: center;
     font-style: italic;
 }
-.error {
-    color:#ff8000;
+.errors {
+    color:#c61919;
+    padding-left: 20px;
     font-style: italic;
     margin:10px 0;
+}
+
+.btn {
+    margin-left: 5px; 
+    margin-right: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+button {
+    padding-left: 5px;
+    padding-right: 5px;
 }

@@ -34,15 +34,17 @@ include('includes/header.php');
 <button type="submit" name="reg_user" class="btn">Register</button>
 
 <button type="button" onclick="window.location.href='<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ;?>' ">Reset</button>
+
+<?php include('errors.php'); ?>
     
 </form>
 
 <p class="center">Already a Member?</p> <p class="center"><a href="login.php">  Please Login!</a></p>
 
+<div class="center">
 
 
-<?php include('errors.php'); ?>
-
+</div>
 </div> 
 <!-- end wrapper -->
 <?php include('includes/footer.php'); ?>

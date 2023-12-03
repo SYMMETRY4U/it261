@@ -51,19 +51,19 @@ if (isset($_POST['reg_user'])) {
 
     if (count($errors) == 0) {
         $password = md5($password1);
-
+    
         $query = "INSERT INTO users (first_name, last_name, email, username, password) VALUES ('$first_name', '$last_name', '$email', '$username', '$password')";
         mysqli_query($iConn, $query);
-
+    
         $_SESSION['username'] = $username;
-        // Define $_SESSION['success'] or remove this line
-        // $_SESSION['success'] = $success;
-
+        $_SESSION['success'] = 'You have successfully registered';
+    
         // Redirect to login page
         header('Location: login.php');
         exit;
     }
-}
+    
+    }
 
 if (isset($_POST['login_user'])) {
     $username = mysqli_real_escape_string($iConn, $_POST['username']);
@@ -76,22 +76,22 @@ if (isset($_POST['login_user'])) {
         array_push($errors, 'Password is required');
     }
 
-     if (count($errors) == 0) {
+    if (count($errors) == 0) {
         $password = md5($password); 
-
+    
         $query = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
         $results = mysqli_query($iConn, $query);
-
+    
         if (mysqli_num_rows($results) == 1) {
             $_SESSION['username'] = $username;
-            // Define $_SESSION['success'] or remove this line
-            // $_SESSION['success'] = $success;
-
+            $_SESSION['success'] = 'You have successfully logged on';
+    
             header('Location: index.php');
             exit;
         } else {
             array_push($errors, 'Wrong username/password combo');
         }
     }
+    
 }
 ?>
